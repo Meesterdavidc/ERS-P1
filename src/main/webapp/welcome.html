@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WElCOME</title>
+    <style>
+            body{
+            background-color: beige;
+            font-family: sans-serif;
+        }
+        /* this is where we will get the color for the ipsum word */
+        /* once we mark thqt word as a psudo class selector we can do the below and alter the look of the html element*/
+        strong{
+            color: blue;
+        }
+        /*Psedoclass selectors in CSS allow us to alter the look of HTML element based on what special state that selected element is in*/
+        strong:hover{
+            color: lightgray;
+        }
+        .color-bluegradient, .color-greengradient{
+            border-radius: 10px;
+            color: white;
+            padding: 10px;
+            font-size: 20px;
+        }
+        .color-bluegradient{
+            /* //note the seconds is how long the animation will take from the start of the animation to the end */
+            transition: all .9s ease-in;
+            background: rgb(2, 0, 36);
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+        }
+        .color-greengradient{
+            transition: all .7s step-end;
+            background: rgb(2, 0, 36);
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 121, 25, 1) 35%, rgba(0, 255, 24, 1) 100%);
+        }
+    </style>
+
+
+</head>
+
+<body>
+<h1>WELCOME, THE LOGIN WORKED</h1>
+</body>
+</html>

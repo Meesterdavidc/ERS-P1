@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+            body{
+            background-color: beige;
+            font-family: sans-serif;
+        }
+        /* this is where we will get the color for the ipsum word */
+        /* once we mark thqt word as a psudo class selector we can do the below and alter the look of the html element*/
+        strong{
+            color: blue;
+        }
+        /*Psedoclass selectors in CSS allow us to alter the look of HTML element based on what special state that selected element is in*/
+        strong:hover{
+            color: lightgray;
+        }
+        .color-bluegradient, .color-greengradient{
+            border-radius: 10px;
+            color: white;
+            padding: 10px;
+            font-size: 20px;
+        }
+        .color-bluegradient{
+            /* //note the seconds is how long the animation will take from the start of the animation to the end */
+            transition: all .9s ease-in;
+            background: rgb(2, 0, 36);
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+        }
+        .color-greengradient{
+            transition: all .7s step-end;
+            background: rgb(2, 0, 36);
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 121, 25, 1) 35%, rgba(0, 255, 24, 1) 100%);
+        }
+    </style>
+
+
+    <meta charset="UTF-8">
+    <title>Password</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ERS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="" id="dynamic-css">
+
+</head>
+<body>
+<div>
+
+
+
+        <h2> User Logic</h2>
+        <br>
+        <br>
+        <h4> If you already have an account, please log In</h4>
+
+        <form method="get" action = "user">
+
+            <label>  Enter your email address</label><br>
+            <input type="text" name="email-sign-in"><br>
+            <br>
+
+            <label> Enter your last name (Password)</label><br>
+            <input type="password" type="password-sign-in">
+
+
+            <br>
+            <br>
+            <br>
+            <input type="submit" value="Please sign in">
+        </form>
+
+        <br>
+        <br>
+
+
+
+
+
+
+
+
+        <h4> If you don't have an account, please Sign up</h4>
+        <form method="get" action="signup">
+            <input type="submit" value="I need to sign up">
+        </form>
+
+
+
+        </form>
+
+
+
+    </div>
+
+</body>
+</html>
